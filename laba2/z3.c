@@ -8,7 +8,6 @@ void sortProducts(struct Product *products, int numProducts) {
     for (int i = 0; i < numProducts - 1; i++) {
         for (int j = 0; j < numProducts - i - 1; j++) {
             if (products[j].price > products[j + 1].price) {
-                // Обмен значениями
                 struct Product temp = products[j];
                 products[j] = products[j + 1];
                 products[j + 1] = temp;
